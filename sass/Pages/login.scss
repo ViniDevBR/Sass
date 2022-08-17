@@ -1,0 +1,5 @@
+.box{
+  p{
+    @include text-style($text-color3, 22px, (Arial, Helvetica, sans-serif));
+  }
+}

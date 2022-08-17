@@ -1,0 +1,20 @@
+//Colors
+@import './Variables/color.scss';
+@import './Pages/cadastro.scss';
+@import './Pages/login.scss';
+
+*{
+  text-decoration: none;
+}
+#title{
+  font-size: 50px;
+  font-family: sans-serif;
+}
+button{
+  width: 100px;
+  padding: 10px 0;
+  cursor: pointer;
+  @include bg-color-mixin(rgb(218, 198, 198));
+  display: block;
+  margin-top: 10px;
+}

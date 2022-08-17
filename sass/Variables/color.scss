@@ -1,0 +1,24 @@
+$primary-color: #ff4043;
+$btn-bg: #0a092c;
+$text-color: #ffffff;
+$text-color2: #ae45cb;
+$text-color3: #0000ff;
+
+@mixin text-style($color, $font-size, $font-family) {
+  color: $color;
+  font-size: $font-size;
+  font-family: $font-family;
+}
+
+@function color($bg-color){
+  @if(lightness($bg-color) > 50){
+    @return black;
+  } @else {
+    @return white;
+  }
+}
+
+@mixin bg-color-mixin($color) {
+  background-color: $color;
+  color: $color($color);
+}
